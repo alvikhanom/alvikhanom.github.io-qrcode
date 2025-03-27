@@ -7,5 +7,5 @@ qr.add_data(website_link)
 qr.make()
 
 img = qr.make_image(fill_color = 'black', back_color = 'white')
-img.save('Youtube_qr.png')
+img.save('youtube_qr.PNG')
 
