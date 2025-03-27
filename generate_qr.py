@@ -1,4 +1,3 @@
-import os
 import qrcode
 
 website_link = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
@@ -11,9 +10,3 @@ img = qr.make_image(fill_color='black', back_color='white')
 file_path = 'youtube_qr.png'
 img.save(file_path)
 
-# Debugging information
-print("QR code saved to:", os.path.abspath(file_path))
-if os.path.exists(file_path):
-    print("File exists:", file_path)
-else:
-    print("File not found:", file_path)
